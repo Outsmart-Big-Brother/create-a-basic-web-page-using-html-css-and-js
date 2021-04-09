@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <title>My awesome website</title>
+    <link rel="shortcut icon" href="images/alligator-161909_640.png">
+    <style>
+        h1, p {
+            color: whitesmoke;
+        }
+        body {
+            background-color: cadetblue;
+        }
+    </style>
+    <body>
+        <h1>My awesome website about alligators</h1>
+        <p>
+            Do you like alligators?
+            <br>
+            This is a new line.
+        </p>
+        <p id="voter" onclick="change()">
+            Now you see it...
+        </p>
+    </body>
+    <script>
+        function change() {
+            document.getElementById("voter").innerHTML = "...now you don't!";
+        }
+    </script>
+</html>
